@@ -120,7 +120,7 @@
     }
 
     /* Media Queries */
-    @media screen and (max-width: 599px) {
+    @media screen and (max-width: 365px) {
 
         /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
         .fluid {
@@ -157,12 +157,41 @@
         }
 
         /* What it does: Adjust typography on small screens to improve readability */
-        .email-container p {
+        /* .email-container p {
             font-size: 17px !important;
+        } */
+
+        .hide {
+            display: none !important;
         }
 
-        .right {
-            text-align: center;
+        .nopad {
+            padding: 0px 0px 0px 0px !important;
+        }
+
+        .pad15 {
+            padding: 15px !important;
+        }
+
+        .padsidessmall {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+
+        .padleftsmall {
+            padding-left: 55px !important;
+        }
+
+        .noradius {
+            border-radius: 0 !important;
+        }
+
+        h1 {
+            font-size: 24px !important;
+        }
+
+        .bordertop {
+            border-top: solid 3px #ffffff !important;
         }
     }
 
@@ -178,7 +207,6 @@
             <tr>
             <td>
             <![endif]-->
-
             <!-- Email Header : BEGIN -->
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
                 <tr>
@@ -200,7 +228,7 @@
                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                             <tr>
                                                 <td style="padding: 23px 25px 15.2px 25px;">
-                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: center;">
                                                         <tr>
                                                             <td>
                                                                 <img src="./companylogo.png" width="217" height="38" border="0" alt="companylogo" class="center-on-narrow" style="width: 100%; max-width: 217px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
@@ -215,16 +243,22 @@
                                     </td>
                                     <td align="left" valign="top" width="300">
                                     <![endif]-->
-                                    <div style="display:inline-block; margin: 0 0; width:100%; min-width:200px; max-width:300px; vertical-align:top;" class="stack-column">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="center-on-narrow">
+                                    <div style="display:inline-block; margin: auto; width:100%; min-width:200px; max-width:300px; vertical-align:top; text-align: center" aling="right" class="stack-column">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="center-on-narrow" aling="center">
                                             <tr>
-                                                <td style="padding: 23px 25px 15.2px 25px;">
-                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="right"> <!-- THIS CLASS WILL NOT WORK -->
+                                                <td>
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="90%">
                                                         <tr>
-                                                            <td>
-                                                                <span style="padding: 0 6px;"><a href="https://www.facebook.com/" target="_blank"><img src="./fblogo.png" width="30" alt="Facebook"></a></span>
-                                                                <span style="padding: 0 6px;"><a href="https://www.twitter.com/" target="_blank"><img src="./twitterlogo.png" width="30" alt="Twitter"></a></span>
-                                                                <span style="padding: 0 6px;"><a href="https://www.google.com/" target="_blank"><img src="./rrssicon.png" width="30" alt="RRSS"></a></span>
+                                                            <td style="padding: 23px 25px 15.2px 25px;" class="bordertop">
+                                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <span style="padding: 0px 10px;"><a href="https://www.facebook.com/" target="_blank"><img src="./fblogo.png" width="30" alt="Facebook"></a></span>
+                                                                            <span style="padding: 0px 10px;"><a href="https://www.twitter.com/" target="_blank"><img src="./twitterlogo.png" width="30" alt="Twitter"></a></span>
+                                                                            <span style="padding: 0px 10px;"><a href="https://www.google.com/" target="_blank"><img src="./rrssicon.png" width="30" alt="RRSS"></a></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -258,17 +292,17 @@
                     <td bgcolor="#ffffff">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td style="padding: 25px 10px 5px 25px; text-align: left;">
+                                <td style="padding: 25px 10px 5px 25px; text-align: left;" class="padsidessmall">
                                     <h1 style="margin: 0; font-family: arial; font-size: 36px; line-height: 140%; color: #000000; font-weight: normal; letter-spacing: 0px">Heading 1</h1>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="padding: 5px 10px 15px 25px; font-family: arial; font-size: 14px; line-height: 120%; color: #000000; text-align: left; letter-spacing: 0px;">
+                                <td style="padding: 5px 10px 15px 25px; font-family: arial; font-size: 14px; line-height: 120%; color: #000000; text-align: left; letter-spacing: 0px;" class="padsidessmall">
                                     <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel molestie velit. Aliquam erat volutpat. Nunc eros purus, consequat quis nibh vel, ullamcorper faucibus felis. Vivamus egestas bibendum neque ut mattis. Cras vitae pretium enum, id dapibus nulla. Fusce cursus justo quam, vel dictum odio viverra at. Aenean dignissim libero nec est efficitu, a tincidunt orci elementum.</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="padding: 0px 10px 5px 75px; font-family: arial; font-size: 14px; line-height: 100%; color: #000000;">
+                                <td style="padding: 0px 10px 5px 75px; font-family: arial; font-size: 14px; line-height: 100%; color: #000000;" class="padleftsmall">
                                     <ul style="margin: 0; padding: 0">
                                         <li style="padding: 7px 20px">Super Interesting Bullet Point 1</li>
                                         <li style="padding: 7px 20px">Super Interesting Bullet Point 2</li>
@@ -430,7 +464,7 @@
                     <td bgcolor="#ffffff">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td style="padding: 0px; font-family: arial; font-size: 24px; line-height: 36px; color: #000000; text-align: center">
+                                <td style="padding: 0px; font-family: arial; font-size: 24px; line-height: 36px; color: #000000; text-align: center" class="hide">
                                     <p style="margin: 0 0 0 0;">Want to learn more? Contact Us Today!</p>
                                 </td>
                             </tr>
@@ -438,11 +472,11 @@
                                 <td bgcolor="#ffffff" style="background: #ffffff;">
                                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                         <tr>
-                                            <td style="padding: 15px 0px 30px 0px">
-                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="30%" style="margin: auto;">
+                                            <td style="padding: 15px 0px 30px 0px" class="nopad">
+                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="30%" style="margin: auto;" class="fluid">
                                                     <tr>
                                                         <td style="border-radius: 6px; background: #8bc151; text-align: center;" class="button-td">
-                                                            <a href="http://www.google.com" style="background: #8bc151; border: 15px solid #8bc151; font-family: arial; font-size: 16px; line-height: 110%; text-align: center; text-decoration: none; display: block; border-radius: 6px;" class="button-a">
+                                                            <a href="http://www.google.com" style="background: #8bc151; border: 15px solid #8bc151; font-family: arial; font-size: 16px; line-height: 110%; text-align: center; text-decoration: none; display: block; border-radius: 6px;" class="button-a noradius">
                                                                 <span style="color:#ffffff;" class="button-link">Contact Us</span>
                                                             </a>
                                                         </td>
@@ -463,7 +497,7 @@
             <!-- Email Footer : BEGIN -->
             <table bgcolor="#33495d" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px; font-family: arial; color: #ffffff; font-size: 14px; line-height: 140%;">
                 <tr>
-                    <td style="padding: 35px 10px; width: 100%; font-family: arial; font-size: 14px; line-height: 140%; text-align: center; color: #ffffff;">
+                    <td style="padding: 35px 10px; width: 100%; font-family: arial; font-size: 14px; line-height: 140%; text-align: center; color: #ffffff;" class="pad15">
                         <a href="http://www.google.com" style="font-family: arial; line-height: 110%; text-align: center; text-decoration: none">
                             <span style="color: #ffffff;">CompanyA.com </span>
                         </a>|
