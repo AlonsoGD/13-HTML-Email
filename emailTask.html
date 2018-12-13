@@ -9,7 +9,6 @@
 
     <!-- CSS Reset : BEGIN -->
     <style>
-
         /* What it does: Remove spaces around the email design added by some email clients. */
         /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
         html,
@@ -19,41 +18,35 @@
             height: 100% !important;
             width: 100% !important;
         }
-
         /* What it does: Stops email clients resizing small text. */
         * {
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
         }
-
         /* What it does: Centers email on Android 4.4 */
         div[style*="margin: 16px 0"] {
             margin: 0 !important;
         }
-
         /* What it does: Stops Outlook from adding extra spacing to tables. */
         table,
         td {
             mso-table-lspace: 0pt !important;
             mso-table-rspace: 0pt !important;
         }
-
         /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
         table {
             border-spacing: 0 !important;
             border-collapse: collapse !important;
-            table-layout: fixed !important;
+            /* table-layout: fixed !important; */
             margin: 0 auto !important;
         }
         table table table {
             table-layout: auto;
         }
-
         /* What it does: Uses a better rendering method when resizing images in IE. */
         img {
             -ms-interpolation-mode:bicubic;
         }
-
         /* What it does: A work-around for email clients meddling in triggered links. */
         *[x-apple-data-detectors],  /* iOS */
         .x-gmail-data-detectors,    /* Gmail */
@@ -68,7 +61,6 @@
             font-weight: inherit !important;
             line-height: inherit !important;
         }
-
         /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
         .a6S {
             display: none !important;
@@ -78,12 +70,10 @@
         img.g-img + div {
             display: none !important;
         }
-
         /* What it does: Prevents underlining the button text in Windows 10 */
         .button-link {
             text-decoration: none !important;
         }
-
         /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
         /* Create one of these media queries for each additional viewport size you'd like to fix */
         /* Thanks to Eric Lepetit @ericlepetitsf) for help troubleshooting */
@@ -92,18 +82,15 @@
                 min-width: 375px !important;
             }
         }
-
         /* What it does: Forces Gmail app to display email full width */
         div > u ~ div .gmail {
             min-width: 100vw;
         }
-
     </style>
     <!-- CSS Reset : END -->
 
     <!-- Progressive Enhancements : BEGIN -->
     <style>
-
     /* What it does: Hover styles for buttons */
     .button-td,
     .button-a {
@@ -114,14 +101,11 @@
         background: #0011ff !important;
         border-color: #0011ff !important;
     }
-
     .right {
         text-align: right;
     }
-
     /* Media Queries */
     @media screen and (max-width: 365px) {
-
         /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
         .fluid {
             width: 100% !important;
@@ -130,7 +114,6 @@
             margin-left: auto !important;
             margin-right: auto !important;
         }
-
         /* What it does: Forces table cells into full-width rows. */
         .stack-column,
         .stack-column-center {
@@ -143,7 +126,6 @@
         .stack-column-center {
             text-align: center !important;
         }
-
         /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
         .center-on-narrow {
             text-align: center !important;
@@ -155,55 +137,43 @@
         table.center-on-narrow {
             display: inline-block !important;
         }
-
         /* What it does: Adjust typography on small screens to improve readability */
         /* .email-container p {
             font-size: 17px !important;
         } */
-
         .hide {
             display: none !important;
         }
-
         .nopad {
             padding: 0px 0px 0px 0px !important;
         }
-
         .pad15 {
             padding: 15px !important;
         }
-
         .padsidessmall {
             padding-left: 10px !important;
             padding-right: 10px !important;
         }
-
         .padsidesbig {
             padding-left: 65px !important;
             padding-right: 65px !important;
         }
-
         .padleftsmall {
             padding-left: 55px !important;
         }
-
         .padbotsmall {
             padding-bottom: 5px !important;
         }
-
         .noradius {
             border-radius: 0 !important;
         }
-
         h1 {
             font-size: 24px !important;
         }
-
         .bordertop {
             border-top: solid 3px #ffffff !important;
         }
     }
-
     </style>
     <!-- Progressive Enhancements : END -->
 </head>
@@ -233,42 +203,49 @@
                                     <tr>
                                     <td align="center" valign="top" width="300">
                                     <![endif]-->
-                                    <div style="display:inline-block; margin: 0 0; width:100%; min-width:200px; max-width:300px; vertical-align:top;" class="stack-column">
+                                    <!-- <div style="display:inline-block; margin: 0 0; width:100%; min-width:200px; max-width:300px; vertical-align:top;" class="stack-column">
                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="center-on-narrow" aling="center">
                                             <tr>
                                                 <td style="padding: 23px 25px 15.2px 25px;" class="padbotsmall">
                                                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: center;">
                                                         <tr>
                                                             <td>
-                                                                <img src="https://alonsogd.github.io/13-HTML-Email/companylogo.png" width="217" height="38" border="0" alt="companylogo" class="center-on-narrow" style="width: 100%; max-width: 217px; font-family: sans-serif; font-size: 15px; line-height: 100%; color: #555555;">
+                                                                <img src="https://alonsogd.github.io/13-HTML-Email/companylogo.png" width="100%" border="0" alt="companylogo" class="center-on-narrow" style="width: 100%; max-width: 217px; font-family: sans-serif; font-size: 15px; line-height: 100%; color: #555555;">
                                                             </td>
                                                         </tr>
                                                     </table>
                                                 </td>
                                             </tr>
                                         </table>
-                                    </div>
+                                    </div> -->
                                     <!--[if mso]>
                                     </td>
                                     <td align="center" valign="top" width="300">
                                     <![endif]-->
-                                    <div style="display:inline-block; margin: auto; width:100%; min-width:200px; max-width:300px; vertical-align:top; text-align: center" aling="center" class="stack-column">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="center-on-narrow">
+                                    <div style="display:inline-block; margin: auto; width:100%; min-width:200px; max-width:500px; vertical-align:top; text-align: center" aling="center" class="stack-column">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="">
                                             <tr>
-                                                <td>
-                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="90%">
+                                                <td style="padding: 20px">
+                                                    <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" width="50%" style="font-size: 14px;text-align: center;">
                                                         <tr>
-                                                            <td style="padding: 23px 65px 15.2px 65px;" class="bordertop padsidesbig">
+                                                            <td style="padding: 5px">
+                                                                <img src="https://alonsogd.github.io/13-HTML-Email/companylogo.png" width="100%" border="0" alt="companylogo" class="center-on-narrow" style="width: 100%; max-width: 300px; font-family: sans-serif; font-size: 15px; line-height: 100%; color: #555555;">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" width="30%" style="text-align: center;">
+                                                        <tr>
+                                                            <td style="padding: 5px" class="bordertop padsidesbig">
                                                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                                                     <tr>
-                                                                        <td>
-                                                                            <span><a href="https://www.facebook.com/" target="_blank"><img src="https://alonsogd.github.io/13-HTML-Email/fblogo.png" width="30" alt="Facebook"></a></span>
+                                                                        <td width="40" style="width:40px">
+                                                                            <span><a href="https://www.facebook.com/" target="_blank"><img src="https://alonsogd.github.io/13-HTML-Email/fblogo.png" width="30" alt="Facebook">&nbsp;</a></span>
                                                                         </td>
-                                                                        <td>
-                                                                            <spa><a href="https://www.twitter.com/" target="_blank"><img src="https://alonsogd.github.io/13-HTML-Email/twitterlogo.png" width="30" alt="Twitter"></a></span>
+                                                                        <td width="40" style="width:40px">
+                                                                            <span><a href="https://www.twitter.com/" target="_blank"><img src="https://alonsogd.github.io/13-HTML-Email/twitterlogo.png" width="30" alt="Twitter">&nbsp;</a></span>
                                                                         </td>
-                                                                        <td>
-                                                                            <spa><a href="https://www.google.com/" target="_blank"><img src="https://alonsogd.github.io/13-HTML-Email/rrssicon.png" width="30" alt="RRSS"></a></span>
+                                                                        <td width="40" style="width:40px">
+                                                                            <span><a href="https://www.google.com/" target="_blank"><img src="https://alonsogd.github.io/13-HTML-Email/rrssicon.png" width="30" alt="RRSS">&nbsp;</a></span>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
